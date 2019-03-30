@@ -92,12 +92,12 @@ html {
     height: 45rem;
     display: flex;
     padding-right: 0;
+    line-height: 1.5;
 }
 
-
+/*Feature Main*/
 
 .feature-main {
-    background-color: pink;
     width: 60%;
     padding-right: 1.5rem;
     display: flex;
@@ -114,20 +114,14 @@ html {
     margin: 2rem 0;
 }
 
-.feature-main p {
-    line-height: 1.5;
-}
-
 .feature-main span {
-    position: relative;
-    right: 0px;
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-
+/*Feature Sidebar*/
 
 .feature-sidebar {
-    background-color: red;
     width: 40%;
     padding: 2rem 1rem;
     border-left: 1px solid #D9D9D9;
@@ -136,7 +130,77 @@ html {
 }
 
 .feature-small {
-    background-color: grey;
     border: 1px solid white;
     height: 100%;
+    padding: 1rem;
+    display: flex;
+}
+
+.feature-small img {
+    width: 35%;
+    height: auto;
+}
+
+.feature-small .small-info {
+    height: 100%;
+    width: 65%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.small-info p {
+    margin-top: 0.5rem;
+}
+
+.small-info span {
+    color: #00C1FF;
+    margin-top: 0.5rem;
+}
+
+/*Learning*/
+
+.learning {
+    background-color: #D9D9D9;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.learning h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.course-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    background-color: white;
+    width: 30%;
+    padding-bottom: 1.5rem;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.course p {
+    margin: 0.5rem 1rem 0 1rem;
 }
