@@ -1,0 +1,142 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #484848;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem 1.5rem;
+}
+
+/*Header*/
+
+.header {
+    background-color: white;
+    border-bottom: 1px solid black;
+    color: black;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.header .title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header .title img {
+    height: 2rem;
+    margin-right: 0.25rem;
+}
+
+.header .title span {
+    color: #D9D9D9;
+    font-weight: 400;
+}
+
+.header ul li {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+/*Banner*/
+
+.banner {
+    background-color: #D9D9D9;
+    height: 35rem;
+    display: flex;
+}
+
+.banner img {
+    height: 100%;
+    width: 60%;
+    margin-right: 1.5rem;
+}
+
+.banner-text {
+    max-width: 27.5%;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 35%;
+    line-height: 1.25;
+}
+
+.banner h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.banner .button {
+    background-color: #484848;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/*Feature*/
+
+.feature {
+    height: 45rem;
+    display: flex;
+    padding-right: 0;
+}
+
+
+
+.feature-main {
+    background-color: pink;
+    width: 60%;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-main img {
+    width: 100%;
+}
+
+.feature-main h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.feature-main p {
+    line-height: 1.5;
+}
+
+.feature-main span {
+    position: relative;
+    right: 0px;
+}
+
+
+
+
+.feature-sidebar {
+    background-color: red;
+    width: 40%;
+    padding: 2rem 1rem;
+    border-left: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-small {
+    background-color: grey;
+    border: 1px solid white;
+    height: 100%;
+}
