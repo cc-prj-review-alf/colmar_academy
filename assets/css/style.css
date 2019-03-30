@@ -276,6 +276,10 @@ html {
     margin-top: 0.5rem;
 }
 
+#thesis-top {
+    background-color: #D9D9D9;
+}
+
 /*Footer*/
 
 footer {
