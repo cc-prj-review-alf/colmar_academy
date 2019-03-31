@@ -183,6 +183,11 @@ html {
 
 .feature-main img {
     width: 100%;
+    border: 2px solid transparent;
+}
+
+.feature-main img:hover {
+    border: 2px solid #7EFFB6;
 }
 
 .feature-main h2 {
@@ -214,13 +219,13 @@ html {
     display: flex;
 }
 
+.feature-small:hover {
+    background-color: #7EFFB6!important;
+}
+
 .feature-small img {
     width: 35%;
     height: auto;
-}
-
-.feature-small img:hover {
-    border: 2px solid #7EFFB6;
 }
 
 .feature-small .mobile-img {
