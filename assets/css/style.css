@@ -12,10 +12,9 @@ html {
 
 /*Header*/
 
-.header {
+header {
     background-color: white;
     border-bottom: 1px solid black;
-    color: black;
     height: 4rem;
     display: flex;
     justify-content: space-between;
@@ -23,7 +22,7 @@ html {
     padding: 0 1.5rem;
 }
 
-.header .title {
+header .title {
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -32,34 +31,38 @@ html {
     letter-spacing: 1px;
 }
 
-.header .title img {
+header .title img {
     height: 2rem;
     margin-right: 0.25rem;
 }
 
-.header .title span {
+header .title span {
     color: #D9D9D9;
     font-weight: 400;
 }
 
-.header ul li {
+header nav {
+    width: 100%;
+}
+
+header ul li {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
     display: inline-block;
     margin-left: 1rem;
 }
 
-.header a {
+header a {
     text-decoration: none;
     color: #484848;
 }
 
-.header li a {
+header li a {
     color: #484848;
     transition: color 0.2s linear;
 }
 
-.header li a:hover {
+header li a:hover {
     color: #7EFFB6;
 }
 
@@ -68,7 +71,7 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
-    .header .title {
+    header .title {
         display: none;
     }
 
@@ -80,8 +83,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-        margin: 0 1.5rem;
     }
 }
 
@@ -220,7 +221,7 @@ html {
 }
 
 .feature-small:hover {
-    background-color: #7EFFB6!important;
+    background-color: #7EFFB6 !important;
 }
 
 .feature-small img {
@@ -377,9 +378,11 @@ html {
     .course h3 {
         margin: 0;
         padding: 1.5rem 1rem;
+        text-align: center;
     }
 
     .course img,
+    .course h4,
     .course p {
         display: none;
     }
