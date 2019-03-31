@@ -60,7 +60,7 @@ html {
 }
 
 .header li a:hover {
-    color: #00C1FF;
+    color: #7EFFB6;
 }
 
 .nav-mobile {
@@ -89,7 +89,7 @@ html {
 /*Banner*/
 
 .banner {
-    background-color: #D9D9D9;
+    background-color: #7EFFB6;
     height: 35rem;
     display: flex;
 }
@@ -125,7 +125,7 @@ html {
 }
 
 .banner .button:hover {
-    background-color: #00C1FF;
+    background-color: #979999;
 }
 
 @media only screen and (max-width: 480px) {
@@ -219,6 +219,10 @@ html {
     height: auto;
 }
 
+.feature-small img:hover {
+    border: 2px solid #7EFFB6;
+}
+
 .feature-small .mobile-img {
     width: 100%;
     display: none;
@@ -239,11 +243,11 @@ html {
 }
 
 .small-info span {
-    color: #00C1FF;
+    color: #7EFFB6;
     margin-top: 0.5rem;
 }
 
-#guest {
+.feature-small:nth-child(2n +1) {
     background-color: #D9D9D9;
 }
 
@@ -286,7 +290,7 @@ html {
         margin-bottom: 1.5rem;
     }
 
-    #guest {
+    .feature-small:nth-child(2n +1) {
         background-color: transparent;
     }
 }
@@ -294,12 +298,13 @@ html {
 /*Learning*/
 
 .learning {
-    background-color: #D9D9D9;
+    background-color: #979999;
     padding-left: 4.5rem;
     padding-right: 4.5rem;
 }
 
 .learning h2 {
+    color: white;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -318,6 +323,11 @@ html {
     width: 32%;
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
+    border: 2px solid #7EFFB6;
+}
+
+.course:hover {
+    box-shadow: 1px 1px 3px white;
 }
 
 .course img {
@@ -328,6 +338,12 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem 1rem 0 1rem;
+}
+
+.course h4 {
+    color: #7EFFB6;
+    font-size: 1rem;
+    margin: 0.5rem 1rem 0 1rem;
 }
 
 .course p {
