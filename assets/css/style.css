@@ -280,6 +280,9 @@ html {
     background-color: #D9D9D9;
 }
 
+.no-border {
+    border: 0;
+}
 /*Footer*/
 
 footer {
