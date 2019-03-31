@@ -47,11 +47,41 @@ html {
     font-weight: 300;
     display: inline-block;
     margin-left: 1rem;
-    transition: color 0.1s linear;
 }
 
-.header ul li:hover {
+.header a {
+    text-decoration: none;
+}
+
+.header li a {
+    color: #484848;
+    transition: color 0.2s linear;
+}
+
+.header li a:hover {
     color: #00C1FF;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+    .header .title {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 1.5rem;
+    }
 }
 
 
@@ -70,7 +100,7 @@ html {
 }
 
 .banner-text {
-    max-width: 27.5%;
+    width: 27.5%;
 }
 
 .banner h1 {
@@ -97,13 +127,46 @@ html {
     background-color: #00C1FF;
 }
 
+@media only screen and (max-width: 780px) {
+    .banner {
+        flex-direction: column;
+        padding: 0;
+        height: 44rem;
+    }
+
+    .banner img {
+        height: 25rem;
+        width: 100%;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 2rem 1rem;
+        line-height: 1.25;
+    }
+
+    .banner h3 {
+        font-size: 1.2rem;
+        margin: 0 1rem 1.5rem 1rem;
+    }
+
+    .banner .button {
+        font-size: 1.5rem;
+        margin: 0 1rem 2rem 1rem;
+        padding: 1.3rem 0;
+    }
+}
+
 /*Feature*/
 
 .feature {
-    height: 45rem;
     display: flex;
-    padding-right: 0;
-    padding-bottom: 0;
+    height: 50rem;
     line-height: 1.5;
 }
 
@@ -114,7 +177,7 @@ html {
     padding-right: 1.5rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .feature-main img {
@@ -137,12 +200,10 @@ html {
 
 .feature-sidebar {
     width: 40%;
-    margin-top: -3rem;
     border-left: 1px solid #D9D9D9;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 1rem 0 2rem 0;
 }
 
 .feature-small {
@@ -157,13 +218,14 @@ html {
     height: auto;
 }
 
+.feature-small .mobile-img {
+    width: 100%;
+    display: none;
+}
+
 .feature-small .small-info {
     height: 100%;
-    width: 65%;
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 2.5rem 1rem;
 }
 
 .small-info h3 {
@@ -182,6 +244,48 @@ html {
 
 #guest {
     background-color: #D9D9D9;
+}
+
+@media only screen and (max-width: 780px) {
+    .feature {
+        height: 87rem;
+        line-height: 2;
+    }
+
+    .feature-main {
+        display: none;
+    }
+
+    .feature-sidebar {
+        padding-top: 0;
+        border: none;
+        width: 100%;
+    }
+
+    .feature-small {
+        border: none;
+        flex-direction: column;
+    }
+
+    .feature-small .small-info {
+        padding: 0;
+    }
+    .small-info span{
+        margin-bottom: 2rem;
+    }
+    .desktop-img {
+        display: none;
+    }
+
+    .feature-small .mobile-img {
+        display: block;
+        height: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #guest {
+        background-color: transparent;
+    }
 }
 
 /*Learning*/
@@ -294,6 +398,7 @@ html {
 .no-border {
     border: 0;
 }
+
 /*Footer*/
 
 footer {
