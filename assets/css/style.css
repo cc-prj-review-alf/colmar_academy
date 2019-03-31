@@ -30,7 +30,6 @@ html {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #484848;
 }
 
 .header .title img {
@@ -52,6 +51,7 @@ html {
 
 .header a {
     text-decoration: none;
+    color: #484848;
 }
 
 .header li a {
@@ -433,6 +433,7 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
+
     .thesis-sidebar,
     .thesis-main h3,
     .thesis-main p {
@@ -465,8 +466,8 @@ footer div span {
     footer {
         border: none;
     }
-    
-    footer div{
+
+    footer div {
         display: none;
-    } 
+    }
 }
