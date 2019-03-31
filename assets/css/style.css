@@ -66,7 +66,7 @@ html {
     display: none;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
     .header .title {
         display: none;
     }
@@ -127,7 +127,7 @@ html {
     background-color: #00C1FF;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
     .banner {
         flex-direction: column;
         padding: 0;
@@ -246,7 +246,7 @@ html {
     background-color: #D9D9D9;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
     .feature {
         height: 87rem;
         line-height: 2;
@@ -270,9 +270,11 @@ html {
     .feature-small .small-info {
         padding: 0;
     }
-    .small-info span{
+
+    .small-info span {
         margin-bottom: 2rem;
     }
+
     .desktop-img {
         display: none;
     }
@@ -292,8 +294,8 @@ html {
 
 .learning {
     background-color: #D9D9D9;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
 }
 
 .learning h2 {
@@ -329,6 +331,36 @@ html {
 
 .course p {
     margin: 0.5rem 1rem 0 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .learning {
+        background-color: white;
+        border: 1px solid #D9D9D9;
+        padding: 2rem 1rem 0.5rem 1rem;
+    }
+
+    .course-overview {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .course {
+        background-color: #D9D9D9;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0;
+    }
+
+    .course h3 {
+        margin: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .course img,
+    .course p {
+        display: none;
+    }
 }
 
 /*Thesis*/
@@ -399,6 +431,22 @@ html {
     border: 0;
 }
 
+@media only screen and (max-width: 480px) {
+    .thesis-sidebar,
+    .thesis-main h3,
+    .thesis-main p {
+        display: none;
+    }
+
+    .thesis {
+        padding: 2rem 0 1.5rem 0;
+    }
+
+    .thesis-main {
+        width: 100%;
+    }
+}
+
 /*Footer*/
 
 footer {
@@ -410,4 +458,14 @@ footer {
 
 footer div span {
     margin-left: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        border: none;
+    }
+    
+    footer div{
+        display: none;
+    } 
 }
